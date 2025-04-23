@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- レスポンシブデザイン（スマホやタブレットでも表示を最適化）を実現するために書いておく必要があります。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- メタディスクリプションは、検索結果の記事タイトル下に表示されます
+     テキトウに書いたり自動抽出するくらいなら全く書かない方がマシ-->
+    <meta name="description" content="このページは楊卓龍の自己紹介、経歴、作成した作品をまとめているサイトである。">
+    <!--  こちらは検索エンジンに対して「このページをインデックス（掲載）
+      しないで！」という指示をするためのタグです。
+      低品質なページや、ユーザーにとって価値のないページに対して指定してお-->
+    <meta name="robots" content="noindex,nofollow">
+
+    <title>楊卓龍</title>
+    <!-- タグのアイコン設定 -->
+    <link rel="icon" href="image/unnamed.jpg" sizes="16x16" type="image/jpg" /> 
+    <link rel="apple-touch-icon-precomposed" href="image/unnamed.jpg" />
+    <meta name="msapplication-TileImage" content="image/unnamed.jpg" />
+<!-- cssファイルとの関連づけ -->
+    <link rel="stylesheet" href="stylesheet.css" />
+    <!-- アイコン -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+  <!-- daisyUIのCDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <div class="navbar bg-base-100 shadow-sm" id="fade">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl">daisyUI</a>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="opa">Link</a></li>
+          <li>
+            <details>
+              <summary>Link</summary>
+              <ul class="bg-base-100 rounded-t-none p-2">
+                <li><a href="./calendar.html">カレンダー</a></li>
+                <li><a href="./introduction.html">経歴</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <p style="background-image: src('./image/bred2.jpg');"> -->
+
+    <button class="btn">Button</button>
+    <button class="btn btn-primary">Button2</button>
+
+    <div class="content w-52  rounded">
+      <h1 class="text-center"><i class="fas fa-user-circle"></i>Profile</h1>
+      <!-- <figure class="profile-image flex justify-center">
+        <img src="./image/unnamed.jpg" />
+      </figure> -->
+      <div class="avatar  flex justify-center">
+        <div class="w-52 rounded trans">
+          <img src="./image/unnamed.jpg" />
+        </div>
+      </div>
+      <div id="dbox">
+        <h2 class="text-center cont ">楊 卓龍</h2>
+      </div>
+      <div class="box7">
+        <p class="text text-center">
+          船井総合研究所の長期インターンのケーススタディ中
+        </p>
+      </div>
+
+      <h3 class="heading-lv3 text-center">自己紹介</h3>
+      <p class="text text-center">
+        東京都立大学時システムデザイン学部情報科学科<span class="bold"
+          >4年生</span
+        >です<br />
+        よろしくお願いします。
+      </p>
+
+      <div class="dropdown flex justify-center">
+        <div tabindex="0" role="button" class="btn m-1 text-blue-500 underline ">他のリンクへ</div>
+        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          <li><a href="./calendar.html" class="text-blue-500 underline">カレンダー</a></li>
+          <li><a href="./introduction.html" class="text-blue-500 underline">イントロ</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  #fade {
+  background: linear-gradient(to bottom, #fff, #4ec4d3);
+  /*グラデーション以外は省略*/
+  }
+  .opa {
+    color: rgba(0,0,0,0.3);
+
+  }
+  h1 {
+    font-size: 32px;
+    font-style: italic;
+  }
+  .text {
+    margin: 16px 0 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .trans img {
+    transition: .3s;
+  }
+  .trans img:hover {
+  opacity: 0.5;
+}
+
+  #dbox {
+    padding: 0.5em 0;
+    margin: 10px;
+    border: double 5px #4ec4d3;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  }
+  .cont {
+    margin: 0;
+    padding: 0;
+  }
+  .box7 {
+    padding: 0.5em 1em;
+    margin: 0;
+    color: #474747;
+    background: whitesmoke; /*背景色*/
+    border-left: double 7px #4ec4d3; /*左線*/
+    border-right: double 7px #4ec4d3; /*右線*/
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+  .profile-image {
+    margin: 16px 0 0;
+    text-align: center;
+  }
+  /* .profile-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-image: url("img/img.png");
+    background-size: cover;
+    background-position: center center;
+  } */
+/* 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+
+  /* .wrap {
+    padding: 32px 0 64px;
+    background-color: #54b1e5;
+  } */
+
+  .content {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 4px 4px #757982;
+    
+  }
+</style>
