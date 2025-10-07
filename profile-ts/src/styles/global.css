@@ -1,0 +1,5 @@
+body { font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; margin: 2rem; color: #222; }
+main { max-width: 760px; margin: 0 auto; }
+h1 { margin-bottom: 0.2rem; }
+h2 { margin-top: 0; color: #555; }
+ul { list-style: disc; margin-left: 1.5rem; }

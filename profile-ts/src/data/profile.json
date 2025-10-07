@@ -1,0 +1,6 @@
+{
+  "name": "太郎 例",
+  "title": "フロントエンド開発者",
+  "bio": "TypeScript と Web 開発が好きです。",
+  "skills": ["TypeScript", "HTML", "CSS", "React"]
+}
